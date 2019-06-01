@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:padding="8dp">
+
+<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/comment_userpic"
+    android:layout_width="72dp"
+    android:layout_height="72dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:src="@drawable/profile_placeholder"
+    android:layout_alignParentStart="true" />
+
+<TextView
+    android:id="@+id/user_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="14dp"
+    android:layout_toRightOf="@id/comment_userpic"
+    android:text="TextView"
+    android:textColor="@android:color/background_dark"
+    android:textStyle="bold" />
+
+<TextView
+    android:id="@+id/id_time"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/user_name"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_toRightOf="@id/comment_userpic"
+    android:text="TextView"
+    android:textColor="@android:color/background_dark" />
+
+<CheckBox
+    android:checked="true"
+    android:id="@+id/check"
+    android:layout_marginStart="8dp"
+    android:layout_below="@id/id_time"
+    android:layout_toRightOf="@id/comment_userpic"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+<TextView
+    android:layout_marginTop="8dp"
+    android:id="@+id/donor"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/check"
+    android:layout_below="@id/id_time"
+    android:text="Donor" />
+
+
+<ImageView
+    android:id="@+id/post_img"
+    android:layout_marginTop="6dp"
+    android:layout_marginStart="8dp"
+    android:layout_toRightOf="@id/donor"
+    android:layout_below="@id/id_time"
+    android:src="@mipmap/post_icon"
+    android:layout_width="24dp"
+    android:layout_height="24dp" />
+<TextView
+    android:layout_marginTop="8dp"
+    android:id="@+id/post"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/post_img"
+    android:layout_below="@id/id_time"
+    android:text="10 posts" />
+
+<ImageView
+    android:id="@+id/delete_img"
+    android:layout_marginTop="4dp"
+    android:layout_marginStart="8dp"
+    android:layout_toRightOf="@id/post"
+    android:layout_below="@id/id_time"
+    android:src="@mipmap/delete_icon"
+    android:layout_width="24dp"
+    android:layout_height="24dp" />
+<TextView
+    android:layout_marginTop="8dp"
+    android:id="@+id/delete"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/delete_img"
+    android:layout_below="@id/id_time"
+    android:text="Delete User" />
+
+<View
+    android:id="@+id/divider"
+    android:layout_toRightOf="@id/comment_userpic"
+    android:layout_width="match_parent"
+    android:layout_height="0.3dp"
+    android:layout_below="@id/comment_userpic"
+    android:layout_marginTop="24dp"
+    android:background="#000000" />
+
+
+
+
+
+
+</android.widget.RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/background_light"
+    android:padding="4dp">
+
+    <ImageView
+        android:id="@+id/comment_userpic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/profile_placeholder" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@id/comment_userpic"
+        android:text="Raila and Uhurus Handshake Manenos"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:id="@+id/id_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/comment_userpic"
+        android:text="10 min"
+        android:textColor="@android:color/black" />
+
+
+    <ImageView
+        android:layout_toRightOf="@+id/comment_userpic"
+        android:layout_marginTop="4dp"
+        android:id="@+id/view_img"
+        android:layout_below="@id/id_time"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+
+        android:layout_marginLeft="12dp"
+        android:src="@mipmap/view_icon" />
+
+    <TextView
+        android:layout_alignTop="@+id/view_img"
+        android:layout_marginLeft="8dp"
+        android:layout_below="@id/id_time"
+        android:id="@+id/view_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/view_img"
+        android:text="225" />
+
+
+    <ImageView
+
+        android:id="@+id/post_img"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/id_time"
+        android:layout_marginEnd="11dp"
+        android:src="@mipmap/delete_icon" />
+
+
+    <View
+        android:id="@+id/divider"
+
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_below="@id/view_img"
+        android:layout_marginTop="8dp"
+        android:background="#000000" />
+
+
+</android.widget.RelativeLayout>
